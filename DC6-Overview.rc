@@ -1,0 +1,43 @@
+// DC6-Overview v1.0.0 - Windows resource script (icon + version information)
+// (c) 2026 by GimliHC
+//
+// Compile with the Windows SDK resource compiler:   rc /fo DC6-Overview.res DC6-Overview.rc
+// The icon path is relative to this file.
+
+#include <winver.h>
+
+#define APP_VERSION_BIN     1,0,0,0
+#define APP_VERSION_STR     "1.0.0\0"
+
+// Application icon (the first icon resource is used by Explorer and the taskbar)
+IDI_APP_ICON ICON "gui\\assets\\icon.ico"
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION     APP_VERSION_BIN
+ PRODUCTVERSION  APP_VERSION_BIN
+ FILEFLAGSMASK   VS_FFI_FILEFLAGSMASK
+ FILEFLAGS       0x0L
+ FILEOS          VOS_NT_WINDOWS32
+ FILETYPE        VFT_APP
+ FILESUBTYPE     VFT2_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"    // U.S. English, Unicode
+        BEGIN
+            VALUE "CompanyName",      "GimliHC\0"
+            VALUE "FileDescription",  "DC6-Overview - view, extract, import and overview Diablo II .dc6 files\0"
+            VALUE "FileVersion",      APP_VERSION_STR
+            VALUE "InternalName",     "DC6-Overview\0"
+            VALUE "LegalCopyright",   "(c) 2026 by GimliHC\0"
+            VALUE "OriginalFilename", "DC6-Overview.exe\0"
+            VALUE "ProductName",      "DC6-Overview\0"
+            VALUE "ProductVersion",   APP_VERSION_STR
+            VALUE "Comments",         "Created 17.10.2026\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0409, 1200
+    END
+END

@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.rc text eol=crlf
+*.dat binary
+*.npy binary
+*.ico binary
+*.png binary

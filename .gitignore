@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Tools
+.pytest_cache/
+.ruff_cache/
+
+# Build output (PyInstaller / resource compiler)
+build/
+dist/
+*.spec
+*.res
+
+# Program output / backups
+*_overview.png
+*_overview.jpg
+*.bak
